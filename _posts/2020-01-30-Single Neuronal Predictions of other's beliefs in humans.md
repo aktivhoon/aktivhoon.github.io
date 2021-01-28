@@ -3,8 +3,8 @@ title: Single neuronal predictions of other's beliefs in humans
 layout: post
 tags: [Neuroscience, Social Learning]
 categories: [Paper Review]
+use_math: true
 ---
-
 
 
 ## Task Setting
