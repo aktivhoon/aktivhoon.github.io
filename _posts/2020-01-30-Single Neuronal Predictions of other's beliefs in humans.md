@@ -1,3 +1,12 @@
+---
+title: Single neuronal predictions of other's beliefs in humans
+layout: post
+tags: [Neuroscience, Social Learning]
+categories: [Paper Review]
+---
+
+
+
 ## Task Setting
 
 피험자들은 false-belief task의 verbal 버전을 진행하였다. 
