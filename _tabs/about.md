@@ -10,5 +10,16 @@ order: 4
 # MIT License
 ---
 
+**Medical doctor working @ Seoul National University Hospital (SNUH).** 
 
-> **Note**: Add Markdown syntax content to file `_tabs/about.md` and it will show up on this page.
+## Research of Interest
+
+* Reinforcement Learning
+* Representation Learning
+* Computational Psychiatry
+
+## Education
+
+* KAIST (B.S.) March 2013 - February 2017
+* Seoul National University College of Medicine (M.D.) March 2017 - February 2021
+
