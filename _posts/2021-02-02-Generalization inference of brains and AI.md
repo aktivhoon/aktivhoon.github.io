@@ -119,7 +119,9 @@ $$
 
 where $$\hat{\mathbb{p}}_t$$ represents place cells generated from inferred grid cells. So before we move on to details about how place cells store memories, let's first go back and understand how they infer $$\mathbb{p}_t$$.
 
-As mentioned previously, memory is a conjunction between sensorium and structural information from grid cells. Sensorium is obtained by first compressing the sensory data $$\mathbb{x}_t$$ to $$f_c(\mathbb{x}_t)$$. This enables the sensory data $$\mathbb{x}_t$$ to have same dimension as $$\mathbb{g}_t$$. After so, it is filtered via exponential smoothing into different frequency bands, $$\mathbb{x}_t ^f$$. To clarify why they use exponential smoothing, let's take a look at the definition of it. For time series $$x_t$$, the simplest exponential smoothed value $$s_t$$ will be:
+As mentioned previously, memory is a conjunction between sensorium and structural information from grid cells. Sensorium is obtained by first compressing the sensory data $$\mathbb{x}_t$$ to $$f_c(\mathbb{x}_t)$$. This enables the sensory data $$\mathbb{x}_t$$ to have same dimension as $$\mathbb{g}_t$$. After so, it is filtered via exponential smoothing into different frequency bands, $$\mathbb{x}_t ^f$$. 
+
+To clarify why they use exponential smoothing, let's take a look at the definition of it. For time series $$x_t$$, the simplest exponential smoothed value $$s_t$$ will be:
 
 
 $$
@@ -144,7 +146,9 @@ s_t = \sum_{k=0}^t c_k e^{-k\alpha} \approx \int_{0} ^{\infty} c_k e^{-sk} dk
 $$
 
 
-Now we can say exponential smoothing is actually Laplace transform when $$c_k$$ is non-zero value only for $$k= 0 , 1, \cdots, t$$. Thus, exponential smoothing with coefficient $$\alpha$$ is very similar to Laplace transform of $$x_t$$ with $$s=\alpha$$.
+We can say exponential smoothing is actually Laplace transform when $$c_k$$ is non-zero value only for $$k= 0 , 1, \cdots, t$$. Thus, exponential smoothing with coefficient $$\alpha$$ is very similar to Laplace transform of $$x_t$$ with $$s=\alpha$$.
+
+Now coming back to the paper, exponential smoothing of $$\mathbb{x}_t$$ can be considered as a simplified version of Laplace transform. By using different $$\alpha$$ values, we temporally abstract $$\mathbb{x}_t$$ in different time scale. (Imagine using real number exponential function instead of pure imaginary number in Fourier's transform) Thus, exponential smoothing captures useful information in time domain, which is a well-known function of the **lateral entorhinal cortex**.
 
 After normalization step, each $$\mathbb{x}_t ^f$$ is conjuncted with $$\mathbb{g}_t ^f$$ to give mean of the distribution, $$q_{\phi} (\mathbb{p}_t \vert \mathbb{x}_{\leq t}, \mathbb{g}_t)$$.
 
