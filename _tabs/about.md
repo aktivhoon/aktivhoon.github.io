@@ -20,6 +20,6 @@ order: 4
 
 ## Education
 
-* KAIST (B.S.) March 2013 - February 2017
 * Seoul National University College of Medicine (M.D.) March 2017 - February 2021
+* KAIST (B.S.) March 2013 - February 2017
 
