@@ -3,7 +3,7 @@ title: Generalization inference of brains and AI
 layout: post
 tags: [Neuroscience, Representation Learning]
 categories: [Paper Review]
-date: 2021-02-03 12:35:01 +0900
+date: 2021-02-02 12:35:01 +0900
 use_math: true
 ---
 
