@@ -148,7 +148,9 @@ Now we can say exponential smoothing is actually Laplace transform when $$c_k$$ 
 
 After normalization step, each $$\mathbb{x}_t ^f$$ is conjuncted with $$\mathbb{g}_t ^f$$ to give mean of the distribution, $$q_{\phi} (\mathbb{p}_t \vert \mathbb{x}_{\leq t}, \mathbb{g}_t)$$.
 
-An attractor network of the form $$\mathbb{h}_{\tau} = f_p (\alpha * \mathbb{h}_{\tau-1} + M_t \mathbb{h}_{\tau-1})$$ is used to retrieve memories, where $$\tau$$ is the iteration of the attractor network and $$\alpha$$ is the decay term. The input of the 
+An attractor network of the form $$\mathbb{h}_{\tau} = f_p (\alpha * \mathbb{h}_{\tau-1} + M_t \mathbb{h}_{\tau-1})$$ is used to retrieve memories, where $$\tau$$ is the iteration of the attractor network and $$\alpha$$ is the decay term. 
 
 Stored memories are extracted via an attractor network using $$f_g(\mathbb{g}_t)$$.
+
+**(Still in progress..)**
 
