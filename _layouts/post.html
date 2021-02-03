@@ -7,10 +7,6 @@ layout: default
 # MIT Licensed
 ---
 
-#<script type="text/javascript" async
-#  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
-#</script>
-
 <div class="row">
 
   <div id="post-wrapper" class="col-12 col-lg-11 col-xl-8">
@@ -51,7 +47,9 @@ layout: default
       </div> <!-- .post-meta -->
 
       <div class="post-content">
-
+	<script type="text/javascript" async
+          src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+        </script>
         {% if page.image %}
           <img src="{{ page.image }}" class="preview-img" alt="Preview Image">
         {% endif %}
