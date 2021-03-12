@@ -148,13 +148,59 @@ $$
 
 We can say exponential smoothing is actually Laplace transform when $$c_k$$ is non-zero value only for $$k= 0 , 1, \cdots, t$$. Thus, exponential smoothing with coefficient $$\alpha$$ is very similar to Laplace transform of $$x_t$$ with $$s=\alpha$$.
 
-Now coming back to the paper, exponential smoothing of $$\mathbb{x}_t$$ can be considered as a simplified version of Laplace transform. By using different $$\alpha$$ values, we temporally abstract $$\mathbb{x}_t$$ in different time scale. (Imagine using real number exponential function instead of pure imaginary number in Fourier's transform) Thus, exponential smoothing captures useful information in time domain, which is a well-known function of the **lateral entorhinal cortex**.
+Now coming back to the paper, exponential smoothing of $$\mathbb{x}_t$$ can be considered as a simplified version of Laplace transform. By using different $$\alpha$$ values, we temporally abstract $$\mathbb{x}_t$$ in different time scale. (Imagine using real number exponential function instead of pure imaginary number in Fourier's transform) Thus, exponential smoothing captures useful information in time domain, which is a well-known function of the **lateral entorhinal cortex**. After normalization step, each $$\mathbb{x}_t ^f$$ is conjuncted with $$\mathbb{g}_t ^f$$ to give mean of the distribution, $$q_{\phi} (\mathbb{p}_t \vert \mathbb{x}_{\leq t}, \mathbb{g}_t)$$.
 
-After normalization step, each $$\mathbb{x}_t ^f$$ is conjuncted with $$\mathbb{g}_t ^f$$ to give mean of the distribution, $$q_{\phi} (\mathbb{p}_t \vert \mathbb{x}_{\leq t}, \mathbb{g}_t)$$.
+To retrieve memories, an attractor network of the form  
 
-An attractor network of the form $$\mathbb{h}_{\tau} = f_p (\alpha * \mathbb{h}_{\tau-1} + M_t \mathbb{h}_{\tau-1})$$ is used to retrieve memories, where $$\tau$$ is the iteration of the attractor network and $$\alpha$$ is the decay term. 
 
-Stored memories are extracted via an attractor network using $$f_g(\mathbb{g}_t)$$.
+$$
+\mathbb{h}_{\tau} = f_p (\alpha * \mathbb{h}_{\tau-1} + M_t \mathbb{h}_{\tau-1})
+$$
 
-**(Still in progress..)**
+
+is used, where $$\tau$$ is the iteration of the attractor network and $$\alpha$$ is the decay term. Depending on whether memories are being retrieved for generative or inference purposes, the input to the attractor, $$\mathbb{h}_0$$, is from the grid cells or sensorium.
+
+## Tolman-Eichenbaum Machine
+
+Using the model above, Timothy Behrens and his collegues recently showed that the model captures diverse properties that have been known to exist in real animal's brain([J.C.R. Whittington, *et al*. *Cell*, 2020](https://www.cell.com/cell/fulltext/S0092-8674(20)31388-X)). They mention the model as **'Tolman-Eichenbaum Machine'**, since it reflects great ideas by Tolman and Eichenbaum.
+
+The congnitive map theory was first proposed by Tolman at 1948, as he argued humans and other animals make complex inferences from sparse observations relying on a systematic ogranization of knowledge. Many neuroscientific researches showed that the hippocampus, especially during spatial tasks, has great contribution and reflect features of this mapping problem. On the other hand, hippocampus is also critical for non-spatial inferences that rely on understanding the relationships or associations between objectes and events. Although it has been a while since theory suggesting a common mechanism underlying both relational memory and spatial reasoning has been proposed, it remains unclear whether such mechansim exists or how it could account for the diverse array of apparently bespoke spatial cell types. Timothy and his collegues however, suggest the model they proposed in their 2018 NIPS paper might shed some light on answering this misterious question.
+
+### TEM can generalize structural knowledge
+
+<img src="https://user-images.githubusercontent.com/4964573/110305185-ccab3780-803f-11eb-8141-14366e8cad3d.png" width="800">
+
+After training TEM, it was asked to make inferences in new transitive inference tasks without any additional experience. For example, after showing a sequence such as A>B>C>D>E, they are asked to answer "what is 3 more than E", and has to answer as "B". The same was checked for either social and spatial strucutral tasks, and TEM was able to answer correctly without having previously seen the particular sensory details of the task before as it has been exposed to similar relational structures. Thus, we can claim **TEM acutally learns the structural knowledge**, regardless of the particula sensory identities.
+
+### TEM represents structure with Grid Cells and forms memories with Place Cells
+
+<img src="https://user-images.githubusercontent.com/4964573/110306409-23fdd780-8041-11eb-80dd-b8978ebfe071.png" width="800">
+
+Surprisingly, when a TEM agent diffuse randomly on 2D graph, **the learned $$\mathbb{g}$$ representations resemble grid cells in both hexagonal space (A) and sqaure space (B)**. Not only does it resemble the grid like pattern, but it also learned gird-patterns with different frequencies and different phases. Learned memory reprsentations $$\mathbb{p}$$, on the other hand, resemble place cells and have different field sizes. These cells remap between environments, which means they do not generalize. 
+
+By comparing real data with data from TEM, we can confirm that spatial correlation coefficients of pairs of TEM structural cells and real grid cells correlate strongly, while TEM hippocampal and real data place cells preserved their relationship to a lesser extent. In other words this means **TEM structural cells (or real grid cells) encode more generalizable relationships than TEM hippocampal cells (or real place cells).**
+
+### Entorhincal and Hippocampal Cell Types form a basis for transition statistics
+
+As we discussed in the first section, we can interpret grid code as eigenvectors of the predictive representation of the state. The grid code pattern therefore, should soley depend on the transition matrix: in other words, for non-diffusive transitions, medial entorhinal representation must change its pattern resembling fundamental properties of it's transitions. So does medial entorhinal representation $$\mathbb{g}$$ in TEM reflect this phenomenon? **The answer is yes.** 
+
+When non-diffusive transition is applied to the agent by mimicing behavior tendencies of animals to spend time near boundaries and aproach objects, **the $$\mathbb{g}$$ representations now shape into border cells (C) and object vector cells (A).** The emergence of object vector cells is quite obvious. Since TEM learns predictive representations and the agent has strong tendency to spend time near objects, $$\mathbb{g}$$ should predict the next transition to be towrd an object - which is exactly what object vector cells do.
+
+Another important finding is that **although the hippocampal code $$\mathbb{p}$$ represent vector to particular objects, unlike the $$\mathbb{g}$$ representation they do not generalize across objects. (B)** This type of cells are 'landmark cells', which have been found in rodent hippocampus.
+
+<img src="https://user-images.githubusercontent.com/4964573/110936681-9e499700-8374-11eb-9965-c49fe6c65360.png" width="800">
+
+### Structural knowledge is preserved over apparently random hippocampal remapping
+
+Now you might have captured some feeling of the difference between $$\mathbb{g}$$ representation and $$\mathbb{p}$$ representation. While $$\mathbb{g}$$ represent fundamental structural knowledge of the environment (thus representing generalizable features of the task structure), $$\mathbb{p}$$ represent more specific features.
+
+Remind that TEM is based on a critical assumption that hippocampal representations $$\mathbb{p}$$ depend on $$\mathbb{g}$$ representations. Since $$\mathbb{g}$$ representations are periodic, hippocampal place cells simply need to retain their phases with respect to the grid code. If the agent faces a new environment, the hippocampal place cells will be able to remap while retaining structural knowledge because place cells might move to the same phase but with repsect to a different peak.
+
+<img src="https://user-images.githubusercontent.com/4964573/110942027-8c6bf200-837c-11eb-9d11-e89383a1df77.png" width="800">
+
+To confirm whether this explanation is biologically plausible, they tested data obtained from mouse and rats while they frrely foraged in multiple environments. If the place cell fires at the same grid phase in each environment, same grid cell will have strong activity at each place cell peak. Thus, by measuring the correlation of the activity of each grid cell at the peak firing of each place cell peak (gridAtPlace) across environments, we can check whether place cells after hippocampal remapping share the same grid cells with its predcecessor. The correlation across environment was statistically significant, supporting the hypothesis that **place cells retian their relationship with the entorhinal grid, desptie remapping across environments.**
+
+### Meachanistic understanding of complex non-spatial abstractions
+
+Since TEM's objective function does not restrict itself to spatial tasks, TEM can learn arbitrary structural abstractions, including complex non-spatial tasks. In a recent finding by Tonegawa and his collegeus ([Sun *et al*. *Nat. Neurosci.*, 2020](https://www.nature.com/articles/s41593-020-0614-x)), rodents perform laps of a circular track but only receive reward every four laps. 
 
