@@ -1,8 +1,18 @@
 ---
-# the default layout is 'page'
+title: About
 icon: fas fa-info-circle
 order: 4
 ---
 
-> Add Markdown syntax content to file `_tabs/about.md`{: .filepath } and it will show up on this page.
-{: .prompt-tip }
+**Medical doctor working @ Seoul National University Hospital (SNUH).** 
+
+## Research of Interest
+
+* Reinforcement Learning
+* Representation Learning
+* Computational Psychiatry
+
+## Education
+
+* Seoul National University College of Medicine (M.D.) March 2017 - February 2021
+* KAIST (B.S.) March 2013 - February 2017
