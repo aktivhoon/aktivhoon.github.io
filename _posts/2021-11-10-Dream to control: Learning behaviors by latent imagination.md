@@ -119,14 +119,21 @@ State values can be estimated in multiple ways that trade-off bias and variance:
 
 
 $$
-V_R (s_{\tau}) \doteq  \mathbb{E}_{q_{\theta}, q_{\phi}} \left( \sum_{n=\tau} ^{t+H} r_n \right)\\
-V_{N}^k (s_{\tau}) \doteq \mathbb{E}_{q_{\theta}, q_{\phi}} \left( \sum_{n=\tau} ^{h-1} \gamma^{n-\tau}r_n + \gamma^{h-\tau} v_{\psi} (s_h) \right), \,\,\,\, \text{with } h=\text{min }(\tau+k, t+H)\\
+V_R (s_{\tau}) \doteq  \mathbb{E}_{q_{\theta}, q_{\phi}} \left( \sum_{n=\tau} ^{t+H} r_n \right)
+$$
+
+$$
+V_{N}^k (s_{\tau}) \doteq \mathbb{E}_{q_{\theta}, q_{\phi}} \left( \sum_{n=\tau} ^{h-1} \gamma^{n-\tau}r_n + \gamma^{h-\tau} v_{\psi} (s_h) \right), \,\,\,\, \text{with } h=\text{min }(\tau+k, t+H)
+$$
+
+$$
 V_{\lambda}(s_{\tau}) \doteq (1-\lambda) \sum_{n=1}^{H-1} \lambda^{n-1} V_N^n(s_\tau) + \lambda ^{H-1}V_N^H(s_{\tau})
 $$
 
+
+
 $$V_R$$ simply sums the rewards from the imagination trajectory until it reaches the horizon, and ignores rewards beyond it. It, therefore, makes action models learn without a value model. $$V^k_N$$ on the other hand, estimates rewards beyond $$k$$ steps with the learned value model. Finally, $$V_{\lambda}$$ is an exponentially weighted average of $$V_N^k$$ for different $$k$$, in which to balance between bias and variance. Here, the dreamer uses $$V_{\lambda}$$ to estimate the value function.
 To update the action and value models, $$V_\lambda (s_{\tau})$$ is estimated for all states $$s_{\tau}$$ along the imagined trajectories. The objective of the value model $$v_\psi(s_\tau)$$ is to regress the value estimates. Thus, the learning objective would be:
-
 $$
 \text{min}_{\psi} \mathbb{E}_{q_{\theta}, q_{\phi}} \left( \sum_{\tau=t} ^{t+H} \frac{1}{2} \left\| v_{\psi} (s_\tau) - V_{\lambda}(s_\tau) \right\|^2 \right)
 $$
