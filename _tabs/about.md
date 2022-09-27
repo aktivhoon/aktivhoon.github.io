@@ -4,7 +4,7 @@ icon: fas fa-info-circle
 order: 4
 ---
 
-**Medical doctor working @ Seoul National University Hospital (SNUH).** 
+**Psychiatry residency @ Seoul National University Hospital (SNUH).** 
 
 ## Research of Interest
 
