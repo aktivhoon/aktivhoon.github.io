@@ -5,6 +5,7 @@ tags: [Representation Learning, Reinforcement Learning]
 categories: [Paper Review]
 date: 2021-11-10 23:08:14 +0900
 use_math: true
+
 ---
 
 ## Key Ideas
@@ -27,16 +28,20 @@ Dreamer uses a latent dynamics model that consists of three components: 1) Repre
 
 
 $$
-\text{Representation model: } p( s_t | s_{t-1}, a_{t-1}, o_t)\\
-\text{Transition model: } q(s_t |s_{t-1}, a_{t-1})\\
-\text{Reward model: } q(r_t |s_t)
+\text{Representation model: } p( s_t | s_{t-1}, a_{t-1}, o_t)
 $$
 
+$$
+\text{Transition model: } q(s_t |s_{t-1}, a_{t-1})
+$$
+
+$$
+\text{Reward model: } q(r_t |s_t)
+$$
 
 Here, $$p$$ is used for distributions that generate samples in the real environment, while $$q$$ is used for their approximations that enable latent imagination.
 The great strength of this approach is that it directly learns the transition dynamics in latent space, resulting in a low memory footprint and fast predictions of thousands of imagined trajectories in parallel. Another strength of learning state dynamics in latent space directly is that by preventing prediction of the observation itself spanned in high-dimensional space, the task to learn transition dynamics becomes something more capable to be learned.
 Imagined trajectories start at the true model state $$s_t$$ of observation sequences drawn from the agent's past experience. By using the models we mentioned above, predictions of $$s_{\tau}$$, $$r_{\tau}$$ and $$a_{\tau}$$ are made, while the objective of this prediction is to maximize the expected imagined rewards:
-
 
 $$
 \mathbb{E}_{q} \left(\sum_{\tau=t} ^\infty \gamma^{\tau-t} r_{\tau} \right)
@@ -47,15 +52,24 @@ To describe latent dynamics with a world model, the paper first uses an approach
 
 
 $$
-\text{Representation model: } p_{\theta}(s_t | s_{t-1}, a_{t-1}, o_t)\\
-\text{Observation model: } q_{\theta}(o_t | s_t)\\
-\text{Transition model: } q_{\theta}(s_t |s_{t-1}, a_{t-1})\\
+\text{Representation model: } p_{\theta}(s_t | s_{t-1}, a_{t-1}, o_t)
+$$
+
+$$
+\text{Observation model: } q_{\theta}(o_t | s_t)
+$$
+
+$$
+\text{Transition model: } q_{\theta}(s_t |s_{t-1}, a_{t-1})
+$$
+
+$$
 \text{Reward model: } q_{\theta}(r_t |s_t)
 $$
 
 
-We assume latent dynamics in the latent space to be a Markov decision process that is fully observed. Components are optimized jointly to maximize variational lower bound (ELBO):
 
+We assume latent dynamics in the latent space to be a Markov decision process that is fully observed. Components are optimized jointly to maximize variational lower bound (ELBO):
 
 $$
 \mathcal{J}_{\text{REC}} \doteq \mathbb{E}_{p}\left( \sum_t \left( \mathcal{J}^t_O + \mathcal{J}^t_R + \mathcal{J}^t_D \right) \right)
@@ -66,13 +80,16 @@ where
 
 
 $$
-\mathcal{J}_O^t \doteq \text{ln }q(o_t | s_t), \, \, \mathcal{J}_R^t \doteq \text{ln }q(r_t | s_t) \\
+\mathcal{J}_O^t \doteq \text{ln }q(o_t | s_t), \, \, \mathcal{J}_R^t \doteq \text{ln }q(r_t | s_t)
+$$
+
+$$
 \mathcal{J}_D^t \doteq -\beta \text{ KL} \left(p(s_t | s_{t-1}, a_{t-1}, o_t) \| q(s_t | s_{t-1}, a_{t-1})  \right)
 $$
 
 
-Since predicting the pixel-based high-dimensional observation $$o_t$$ from $$s_t$$ requires high model capacity, we can instead encourage the model to increase mutual information between states and observations. This will replace the observation model with a state model:
 
+Since predicting the pixel-based high-dimensional observation $$o_t$$ from $$s_t$$ requires high model capacity, we can instead encourage the model to increase mutual information between states and observations. This will replace the observation model with a state model:
 
 $$
 \text{State model: }q_{\theta}(s_t | o_t)
@@ -101,7 +118,10 @@ The dreamer uses an actor-critic approach, consisting of an action model and a v
 
 
 $$
-\text{Action model: }a_{\tau} \sim q_{\phi}(a_{\tau} | s_{\tau}) \\
+\text{Action model: }a_{\tau} \sim q_{\phi}(a_{\tau} | s_{\tau}) 
+$$
+
+$$
 \text{Value model: } v_{\psi}(s_{\tau}) \approx \mathbb{E}_{q(\cdot | s_{\tau})} \left( \sum_{\tau=t} ^{t+H} \gamma^{\tau-t} r_t \right)
 $$
 
@@ -109,7 +129,6 @@ $$
 
 Both models are trained with a typical policy iteration fashion.
 To enable the action model to learn the policy itself for a given state $$s$$, the paper uses reparameterized sampling:
-
 $$
 a_{\tau} = \text{tanh } (\mu_{\phi} (s_{\tau})+\sigma_{\phi} (s_\tau)\epsilon), \, \, \,\epsilon \sim N(0, \mathbb{I})
 $$
@@ -129,8 +148,6 @@ $$
 $$
 V_{\lambda}(s_{\tau}) \doteq (1-\lambda) \sum_{n=1}^{H-1} \lambda^{n-1} V_N^n(s_\tau) + \lambda ^{H-1}V_N^H(s_{\tau})
 $$
-
-
 
 $$V_R$$ simply sums the rewards from the imagination trajectory until it reaches the horizon, and ignores rewards beyond it. It, therefore, makes action models learn without a value model. $$V^k_N$$ on the other hand, estimates rewards beyond $$k$$ steps with the learned value model. Finally, $$V_{\lambda}$$ is an exponentially weighted average of $$V_N^k$$ for different $$k$$, in which to balance between bias and variance. Here, the dreamer uses $$V_{\lambda}$$ to estimate the value function.
 To update the action and value models, $$V_\lambda (s_{\tau})$$ is estimated for all states $$s_{\tau}$$ along the imagined trajectories. The objective of the value model $$v_\psi(s_\tau)$$ is to regress the value estimates. Thus, the learning objective would be:
