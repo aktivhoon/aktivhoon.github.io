@@ -25,9 +25,13 @@ where $$s_t$$ is the state visited at time $$t$$, and $$\gamma \in [0, 1]$$ is d
 
 
 $$
-V(s) = \sum_{s'} M(s, s')R(s')\\
+V(s) = \sum_{s'} M(s, s')R(s')
+$$
+
+$$
 \text{where } M(s,s') = \mathbb{E} \left[ \sum_{t=0} ^{\infty} \gamma^t \mathbb{I}(s_t = s') | s_0 = s \right] = \sum_{t=0}^{\infty} \gamma^t T^t
 $$
+
 
 
 where $$T$$ is the transition probability matrix.
@@ -88,8 +92,15 @@ From the equation above, $$p_{\theta}(\mathbb{g}_t \vert \mathbb{g}_{t-1}, \math
 
 
 $$
-\mathbb{g}_t = f_{\mu_g}(\mathbb{g}_{t-1} + D_a \mathbb{g}_{t-1}) + \sigma \cdot \epsilon_t\\
-\epsilon_t \sim \mathcal{N}(0, \mathbb{I})\\
+\mathbb{g}_t = f_{\mu_g}(\mathbb{g}_{t-1} + D_a \mathbb{g}_{t-1}) + \sigma \cdot \epsilon_t
+$$
+
+
+$$
+\epsilon_t \sim \mathcal{N}(0, \mathbb{I})
+$$
+
+$$
 \text{where } Vec[D_a] = f_D (\mathbb{a}_t), \,\, \sigma =f_{\sigma_g}(\mathbb{g}_{t-1})
 $$
 
@@ -125,13 +136,16 @@ To clarify why they use exponential smoothing, let's take a look at the definiti
 
 
 $$
-s_0 = x_0 \\
+s_0 = x_0
+$$
+
+$$
 s_t = \alpha x_t + (1-\alpha)s_{t-1}, \,\,\, t>0
 $$
 
 
-We can re-write this as
 
+We can re-write this as
 
 $$
 s_t = \alpha \sum_{k=0}^t (1-\alpha)^k x_{t-k}

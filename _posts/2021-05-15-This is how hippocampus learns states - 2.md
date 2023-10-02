@@ -35,8 +35,15 @@ where $$O$$ is a matrix known as an infinitesimal generator. The generator $$O$$
 
 
 $$
-O_{ij} \geq 0, \, \, x_i \neq x_j \\
-O_{ii} \leq 0 \\
+O_{ij} \geq 0, \, \, x_i \neq x_j
+$$
+
+
+$$
+O_{ii} \leq 0
+$$
+
+$$
 \sum_{j=1}^{\left| \mathcal{X} \right|} O_{ij} = 0
 $$
 
@@ -131,23 +138,30 @@ A general class of stable distributions known as symmetric Lévy $$\alpha$$-stab
 
 
 $$
-\varphi_{\alpha, \mu, c}(k) = e^{ik\mu -\left| ck \right|^{\alpha}}\\
+\varphi_{\alpha, \mu, c}(k) = e^{ik\mu -\left| ck \right|^{\alpha}}
+$$
+
+
+$$
 p_{\alpha, \mu, c} (x) = \frac{1}{2\pi} \int _{-\infty} ^{\infty} \varphi_{\alpha, \mu, c}(k) e^{-ikx} dk
 $$
-
-
 $$\mu$$ parameter is zero in the random walk propagator since it is centered at the initial position, if we compare the above equation with our propagator equation $$P_{\tau} = G e^{\tau^{-1}\Lambda} W$$, the scale parameter $$c$$ turns out to be analogous to the parameter $$\tau$$. Likewise, frequency $$k$$ in the Fourier transofrm is equivalaent to the generator eigenvalues. As a conclusion we can say:
+
+$$
+\mu \rightarrow 0
+$$
 
 
 $$
-\mu \rightarrow 0 \\
-c^{\alpha} \rightarrow \tau^{-1}\\
+c^{\alpha} \rightarrow \tau^{-1}
+$$
+
+$$
 k \rightarrow \lambda_k
 $$
 
 
 Then, the power spectrum matrix component can be re-written as
-
 
 $$
 s_{\tau, \alpha}(\lambda) = e^{-\tau^{-1} \left| \lambda \right|^{\alpha}}
