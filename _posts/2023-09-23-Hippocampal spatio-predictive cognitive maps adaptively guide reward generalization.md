@@ -1,5 +1,5 @@
 ---
-title: Hippocampal patio-predictive cognitive maps adaptively guide reward generalization
+title: Hippocampal spatio-predictive cognitive maps adaptively guide reward generalization
 layout: post
 tags: [Reinforcement Learning, Neuroscience, Representation Learning]
 categories: [Paper Review]
