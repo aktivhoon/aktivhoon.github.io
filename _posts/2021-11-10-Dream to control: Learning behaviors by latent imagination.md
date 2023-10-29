@@ -42,7 +42,6 @@ $$
 Here, $$p$$ is used for distributions that generate samples in the real environment, while $$q$$ is used for their approximations that enable latent imagination.
 The great strength of this approach is that it directly learns the transition dynamics in latent space, resulting in a low memory footprint and fast predictions of thousands of imagined trajectories in parallel. Another strength of learning state dynamics in latent space directly is that by preventing prediction of the observation itself spanned in high-dimensional space, the task to learn transition dynamics becomes something more capable to be learned.
 Imagined trajectories start at the true model state $$s_t$$ of observation sequences drawn from the agent's past experience. By using the models we mentioned above, predictions of $$s_{\tau}$$, $$r_{\tau}$$ and $$a_{\tau}$$ are made, while the objective of this prediction is to maximize the expected imagined rewards:
-
 $$
 \mathbb{E}_{q} \left(\sum_{\tau=t} ^\infty \gamma^{\tau-t} r_{\tau} \right)
 $$
