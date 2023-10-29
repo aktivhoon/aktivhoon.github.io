@@ -33,29 +33,45 @@ The experiment is conducted for total three days.
 Using Gaussian-process regression model, we estimate the reward of given stimuli. The regression model can use multiple different kernels for reward estimation & generlaization.
 
 For spatial cognitive map case, the kernel would be a Gaussian kernel:
+
+
 $$
 K(x, x') = \sigma_f^2 \text{ exp } \left( - \frac{\left\| x -x' \right\| ^2}{2\lambda^2} \right)
 $$
+
+
 where $$\sigma^2_f$$ is the parameter controlling the degree to which the predictions differ from the mean, and $$\lambda$$ is the lengthscale parameter.
 
 For the case of predictive map, the diffusion kernel can be constructed based on the hypothesis that predictive relations for generalization. We can first start from computing the successor matrix $$M$$:
+
+
 $$
 M(s, s') = \mathbb{E} \left[ \sum_{t=0}^{\infty} \gamma^t \mathbb{I} (s_t = s') \mid s_0 = s \right]
 $$
+
+
+
 
 $$
 \hat{M}(s, :) \leftarrow \hat{M}(s, :) + \eta \left[ \mathbb{1}_{s} + \gamma \hat{M} (s',:) - \hat{M}(s, :) \right]
 $$
 
-
 where $$\gamma$$ is the discount factor. From the definition of $$M$$, the transition matrix $$T$$ can be computed as:
+
+
 $$
 T = \frac{M^{-1}-I}{-\gamma}
 $$
+
+
 where $$I$$ is the identity matrix. The diffusion kernel $$K$$ can be formulated as
+
+
 $$
 K = \text{exp} (-\lambda L)
 $$
+
+
 where the $$L$$ is the normalized graph Laplacian which equals $$I-T$$.
 
 
