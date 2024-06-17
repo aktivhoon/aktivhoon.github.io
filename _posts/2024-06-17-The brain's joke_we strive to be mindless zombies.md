@@ -49,7 +49,7 @@ $$
 $$
 
 
-This leads us to a rather strange conclusion. If our consciousness is the feeling of uncertainty, and our brain is constantly striving to mimize that uncertainty, it's as if our brain is trying to turn us into philosophical zomibes - unconscious, soulless beings. Ironically, what prevents this to happen are two major factors: the limited computational complexity of our brain and the fact that our brain is wrapped in a Markov blanket, preventing direct interaction with the external world. Therefore, prediction error and uncertainty inevitably arise.
+This leads us to a rather strange conclusion. If our consciousness is the feeling of uncertainty, and our brain is constantly striving to mimize that uncertainty, it's as if our brain is trying to turn us into [philosophical zomibes](https://en.wikipedia.org/wiki/Philosophical_zombie) - unconscious, soulless beings. Ironically, what prevents this to happen are two major factors: the limited computational complexity of our brain and the fact that our brain is wrapped in a Markov blanket, preventing direct interaction with the external world. Therefore, prediction error and uncertainty inevitably arise.
 
 While updating the internal world model is one strategy to reduce expected surprise, it is not the only option. We can also choose actions that lead us to states with less uncertainty. This brings us to the "dark-room problem." To define it more specifically, I would like to quote from Karl Friston's paper:
 
@@ -69,7 +69,7 @@ So, what is my conclusion? Well, I suppose our brain was born to be lazy, and we
 
 [1] [Solms, M. (2019). The hard problem of consciousness and the free energy principle. *Frontiers in Psychology*, *9*, 412177.](https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2018.02714/full)
 
-[2] https://en.wikipedia.org/wiki/Markov_blanket
+[2] [Wikipedia: Markov Blanket](https://en.wikipedia.org/wiki/Markov_blanket)
 
 [3] [Bruineberg, J., Dołęga, K., Dewhurst, J., & Baltieri, M. (2022). The emperor's new Markov blankets. *Behavioral and Brain Sciences*, *45*, e183.](https://www.cambridge.org/core/journals/behavioral-and-brain-sciences/article/emperors-new-markov-blankets/715C589A73DDF861DCF8997271DE0B8C)
 
