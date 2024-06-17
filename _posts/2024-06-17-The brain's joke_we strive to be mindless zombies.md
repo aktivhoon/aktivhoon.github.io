@@ -1,5 +1,5 @@
 ---
-title: The brain's joke: we strive to be mindless zombies
+title: The brain's joke &#58; we strive to be mindless zombies
 layout: post
 tags: [Neuroscience, Philosophy]
 categories: [Opinion]
