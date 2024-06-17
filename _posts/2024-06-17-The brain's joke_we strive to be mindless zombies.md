@@ -19,7 +19,7 @@ While numerous theories attempt to explain consciousness in scientific terminolo
 
 ## The Markov blanket
 
-In statistics, there is a concept called 'Markov blanket'. It is defined as a subset that contains all the useful information to explain a given node. Being more specific in mathematics, a Markov blanket of variable $Y$ in a random variable set $$\mathcal{S} = \{ X_1, \cdots,X_n \}$$ will be any subset $$\mathcal{S}_1$$ of $$\mathcal{S}$$, conditioned on
+In statistics, there is a concept called 'Markov blanket'. It is defined as a subset that contains all the useful information to explain a given node. Being more specific in mathematics, a Markov blanket of variable $$Y$$ in a random variable set $$\mathcal{S} = \{ X_1, \cdots,X_n \}$$ will be any subset $$\mathcal{S}_1$$ of $$\mathcal{S}$$, conditioned on
 
 
 $$
@@ -27,7 +27,7 @@ Y \perp\!\!\!\perp \mathcal{S} \backslash \mathcal{S}_1 | \mathcal{S}_1
 $$
 
 
-Our brain, however, is literally in a blanket of cells: the skin, bone, and muscles. The brain's internal state ($$\mu$$) cannot directly interact with the true external state ($\phi$). We can only perceive the external world through sensory neurons and organs, and influence it through motor neurons and muscles.
+Our brain, however, is literally in a blanket of cells: the skin, bone, and muscles. The brain's internal state ($$\mu$$) cannot directly interact with the true external state ($$\phi$$). We can only perceive the external world through sensory neurons and organs, and influence it through motor neurons and muscles.
 
 <img src="https://static.cambridge.org/binary/version/id/urn:cambridge.org:id:binary:20221130112212408-0835:S0140525X21002351:S0140525X21002351_fig2.png?pub-status=live" alt="markov_blanket" style="zoom:30%;" />
 
