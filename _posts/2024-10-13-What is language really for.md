@@ -3,7 +3,7 @@ title: What is language really for?
 layout: post
 tags: [Neuroscience, Representation Learning, Philosophy]
 categories: [Opinion]
-date: 2024-10-13 10:23:00 +0900
+date: 2024-10-13 22:13:00 +0900
 use_math: true
 ---
 
