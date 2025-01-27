@@ -27,6 +27,8 @@ While reinforcement learning (RL) is not the most suitable method for solving al
 
 In the RL framework, fluid intelligence can be described as follows: if an agent learns the policy $$\pi(a|s)$$ for a finite set of tasks ($$T_1, \cdots, T_k$$ ), represented as $$\pi(a|s, T_k)$$ , it should be able to infer $$\pi(a|s, T_{\text{new}})$$ for a novel task $$T_{\text{new}}$$. If we define the task using a parameter set $$\Theta$$, then acquiring general knowledge of the task is equivalent to learning a generalized policy $$\pi(a|s,\Theta)$$.
 
+
+
 <img src="https://github.com/user-attachments/assets/830f1c32-2d38-4d08-bb15-feda03a2c79f" alt="Ring Manifold" style="zoom:10%;" />
 
 For example, consider an agent learning multiple "'ring manifolds", each with a different angular offset in a 3D space. With finite set of these manifolds. After training on a finite set of such manifolds, if the agent discovers these ring manifolds can be unified as sections of a generalized "torus manifold," it gains the ability to quickly adapt to novel situations that also belong to this broader manifold. In this sense, fluid intelligence can be theoretically achieved by learning a more "generalized" static skill manifold, along with the ability to identify the appropriate "section" of it for a given task. From this viewpoint, fluid intelligence can be seen as merely an extension of static skill, generalized to a broader scope.
