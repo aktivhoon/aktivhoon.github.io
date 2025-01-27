@@ -25,7 +25,11 @@ A key hallmark of fluid intelligence is the ability to adaptively recombine prev
 
 While reinforcement learning (RL) is not the most suitable method for solving all problems, it aligns with the current trend in AI, where intelligence is often evaluted based on the system's ability to provide an *appropriate response*. Given this context, it seems reasonable to adopt an RL perspective for further discussion.
 
-In the RL framework, fluid intelligence can be described as follows: if an agent learns the policy $$\pi(a|s)$$ for a finite set of tasks ($$T_1, \cdots, T_k$$ ), represented as $$\pi(a|s, T_k)$$ , it should be able to infer $$\pi(a|s, T_{\text{new}})$$ for a novel task $$T_{\text{new}}$$. If we define the task using a parameter set $$\Theta$$, then acquiring general knowledge of the task is equivalent to learning a generalized policy $$\pi(a|s,\Theta)$$.
+In the RL framework, fluid intelligence can be described as follows: Markov blanket of variable $$Y$$ in a random variable set $$\mathcal{S} = \{ X_1, \cdots,X_n \}$$ will be any subset $$\mathcal{S}_1$$ of $$\mathcal{S}$$, conditioned on
+
+
+
+if an agent learns the policy $$\pi(a|s)$$ for a finite set of tasks ($$T_1, \cdots, T_k$$ ), represented as $$\pi(a|s, T_k)$$ , it should be able to infer $$\pi(a|s, T_{\text{new}})$$ for a novel task $$T_{\text{new}}$$. If we define the task using a parameter set $$\Theta$$, then acquiring general knowledge of the task is equivalent to learning a generalized policy $$\pi(a|s,\Theta)$$.
 
 
 
