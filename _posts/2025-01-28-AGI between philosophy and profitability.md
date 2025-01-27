@@ -27,9 +27,7 @@ While reinforcement learning (RL) is not the most suitable method for solving al
 
 In the RL framework, fluid intelligence can be described as follows: 
 
-
-
-if an agent learns the policy $$\pi(a|s)$$ 
+if an agent learns the policy $$\pi(a | s)$$ 
 
 
 
@@ -37,11 +35,11 @@ for a finite set of tasks ($$T_1, \cdots, T_k$$ ),
 
 
 
-represented as $$\pi(a|s, T_k)$$ , 
+represented as $$\pi(a | s, T_k)$$ , 
 
 
 
-it should be able to infer $$\pi(a|s, T_{\text{new}})$$ 
+it should be able to infer $$\pi(a | s, T_{\text{new}})$$ 
 
 
 
@@ -53,7 +51,7 @@ for a novel task $$T_{\text{new}}$$. If we define the task using a
 
 
 
-policy $$\pi(a|s,\Theta)$$.
+policy $$\pi(a | s,\Theta)$$.
 
 
 
