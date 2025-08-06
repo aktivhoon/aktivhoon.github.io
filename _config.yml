@@ -180,6 +180,14 @@ compress_html:
   ignore:
     envs: [development]
 
+# Static files include (PDF files)
+include:
+  - assets/files
+
+# Keep files during build
+keep_files:
+  - assets/files
+
 exclude:
   - '*.gem'
   - '*.gemspec'
