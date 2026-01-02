@@ -25,7 +25,7 @@ To be fair, current LLMs exhibit a remarkable form of intelligence through In-Co
 
 In a biological system, there is no hard wall between 'learning' and 'being'. When we encounter a new rule, our $$g$$ (plasticity and learnig rules) ensures that this knowledge eventually modified our $$f$$ (synaptic weights). We digest the experience into our structure. In a LLM, the weights are effectively frozen during interaction. Even if we were to unfreeze them, current architectures lack the efficiency to blend new experiences into their permanent state. Because of their brittle and data-hungry learning process, it takes thousands of repetitions for a new fact to settle into the weights without causing catastrophic interference with existing knowledge.
 
-Without a $$g$$ capable of efficient, online structural updates, the model is trapped in a loop of transient mimicry. It can handle the "now" within its context window, but it cannot move from $f_{t}$ to $f_{t+1}$ to become "more". It remains a ghost: a high resolution recording of past intelligence that can simulate the present, but lacks the hardware level metabolism to turn experience into self.
+Without a $$g$$ capable of efficient, online structural updates, the model is trapped in a loop of transient mimicry. It can handle the "now" within its context window, but it cannot move from $$f_{t}$$ to $$f_{t+1}$$ to become "more". It remains a ghost: a high resolution recording of past intelligence that can simulate the present, but lacks the hardware level metabolism to turn experience into self.
 
 ## The Impossibility of Veridcal Coverage
 
