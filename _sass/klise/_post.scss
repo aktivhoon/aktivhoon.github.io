@@ -78,6 +78,7 @@
   figure {
     img {
       border-radius: 2px;
+      text-align: center;
     }
 
     figcaption {
@@ -110,8 +111,8 @@
 
   > p {
     margin: 0;
-    padding-top: $spacing-full - 15;
-    padding-bottom: $spacing-full - 15;
+    padding-top: 0;
+    padding-bottom: $spacing-full - 20;
   }
 
   ul.task-list {

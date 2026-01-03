@@ -1,18 +1,23 @@
 ---
-title: Colophon
+title: About
 permalink: /about/
 layout: page
-excerpt: Hello peeps, I'm student of computer science from Banyuwangi, living in Jogjakarta. This blog for documentation about my programming journey, running on jekyll, hosting on netlify and using my own simple theme.
+excerpt: 
 comments: false
 ---
 
-He's a student from Banyuwangi, living in Jogjakarta. the blog for documentation about his programming 🎒 journey, running on jekyll, hosting on [now.sh](http://now.sh) and using his own theme, he name it <a href="https://github.com/piharpi/jekyll-klise" target="_blank" rel="noopener">klisé</a>, he also loves to learning web technology; but he often forgot, that a reason why him doing the writing.
+I am a **Psychiatry Resident at SNUH** navigating the intersection of clinical wisdom and mathematical rigor. I’ve always been driven to decode the "algorithms" of the human mind 🧠. 
 
-If you have a question about him or else, just send a letter to him.
+**What I'm currently into:**
 
-You can [report](http://github.com/piharpi/jekyll-klise/issues/new) if there is an broken link(s) or somethings else.
+- **Computational Psychiatry** 💻: Translating subjective mental states into the objective language of math.
+- **Reinforcement Learning (RL)** 🕹️: Exploring how the brain updates its "policy" to navigate an uncertain world.
+- **Representation Learning** 🕸️: Finding low-dimensional beauty within the high-dimensional chaos of human thought.
 
-**may u needs ✨**
+**My Path:**
 
-- {{ site.author.email }}
-- github.com/{{ site.author.github }}
+* **KAIST (Ph.D.) 🔬**: Thesis on the geometry of learning and the functional role of the orbitofrontal cortex in mental representation.
+* **SNU Medicine (M.D.)** 🩺: Learning to solve inverse problems in clinical settings
+* **KAIST (B.S.)** 🧬: Building a foundation in life sciences and computational logic.
+
+I believe the future of psychiatry lies in bridging the gap between the clinic and the computer. When I’m not with patients, I’m likely tweaking a model or exploring formal logic.
