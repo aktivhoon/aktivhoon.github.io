@@ -217,7 +217,7 @@
 
 // Content
 .posts-item-note {
-  font-size: $base-font-size;
+  font-size: $base-font-size * 1.25;
   font-weight: 700;
   margin-bottom: 5px;
   color: $black;
@@ -252,6 +252,9 @@
     font-size: $base-font-size;
     font-weight: normal;
     letter-spacing: 0.1px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
 
     a {
       color: $text-base-color;
@@ -260,6 +263,20 @@
       &focus {
         color: $black;
       }
+    }
+
+    .post-new-badge {
+      display: inline-block;
+      font-size: 10px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      padding: 1px 4px;
+      border-radius: 3px;
+      background-color: $text-link-blue;
+      color: $white;
+      line-height: 1.4;
+      vertical-align: middle;
     }
   }
 }
