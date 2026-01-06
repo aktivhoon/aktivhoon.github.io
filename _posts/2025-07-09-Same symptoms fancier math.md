@@ -14,7 +14,7 @@ Over the past two decades, neuroscience has made remarkable progress, driven by 
 Since 2016, I've been drawn to computational psychiatry as an attractive field, captivated by its potential to steer psychiatry toward a more scientific, objective clinical practice. I then went to medical school and pursued my clinical carreer to become a psychiatrist. While I remain a devoted advocate of computational psychiatry, one question continues to gnaw at me: will computational psychiatry actually help us forge better clinical practice for psychiatric disease? My current take is cautiously optimistic—but only if computational psychiatry pivots from its current preoccupations.
 
 ## The syndromic view of disease
-<img src="https://raw.githubusercontent.com/aktivhoon/aktivhoon.github.io/main/_posts/images/symptom-disease.png" alt="Disease Model" style="width: 90%;" />
+<img src="./images/symptom-disease.png" alt="Disease Model" style="width: 90%;" />
 
 One of the great lessons that I've learned through nine years of medical education and clinical practice—though it may seem somewhat obvious—is that no single symptom or sign can be unique to a certain disease. Rather, we diagnose based on patterns, order, duration, and severity of symptoms and signs, which we call the "course" or "history" of the clinical findings. Similarly, no objective findings, including any kind of blood test or imaging, can be both sufficient and essential for diagnosing a single disease. We combine all clinical findings to form a clinical impression. In other words, medical diagnosis essentially embraces a philosophy of viewing disease as a *syndrome of clinical findings*. Symptoms are therefore the *aliased observations* of the disease, and the clinician's role is to infer the *latent state* of the patient—the procedure we call diagnosis.
 
@@ -25,7 +25,7 @@ However, many other diseases still remain with unknown pathophysiology. One exam
 ## Computational psychiatry is still 'symptomology'
 While you've been reading through the preceding discussion, you might have been thinking, "Okay, I get it. Diagnosis is difficult. But what does this have to do with computational psychiatry?" The connection becomes clear when we examine what computational psychiatry is actually doing: despite its ambitious pursuit of sophisticated mathematical models and promising rhetoric about mechanistic understanding, it remains fundamentally rooted in the same symptom-based approach that has defined psychiatry for decades. In essence, computational psychiatry is still doing 'symptomology'—but just with more elegant equations.
 
-<img src="https://raw.githubusercontent.com/aktivhoon/aktivhoon.github.io/main/_posts/images/symptom-disease-model.png" alt="Disease Model Parameter" style="width: 90%;" />
+<img src="./images/symptom-disease-model.png" alt="Disease Model Parameter" style="width: 90%;" />
 
 This limitation originates from experimental design. Most computational models fit behavioral and perceptual data based on task responses, essentially objectifying behavioral phenomena that are already defined. While this quantification feels like progress—replacing subjective clinical impressions with mathematical precision (and yes, I admit this is also progress, though it's a bit like upgrading from "quite sad" to "depression severity score: 7.3"!)—it's fundamentally still measuring the same thing: symptoms and signs, not underlying pathophysiology.
 
@@ -36,7 +36,7 @@ Making it worse, having parameters with diagnostic value might be encouraging, b
 ## Psychiatric disease follows the same syndromic logic
 As a reminder, psychiatric disease is also disease, so it operates under the same diagnostic constraints and syndromic framework as other medical conditions. The fact that we're dealing with behavior and cognition rather than blood counts or joint inflammation doesn't exempt psychiatry from the fundamental limitations of medical diagnosis. The absence of clear biomarkers makes psychiatric diagnosis even more dependent on pattern recognition across multiple domains—symptoms, course, severity, and functional impact.
 
-<img src="https://raw.githubusercontent.com/aktivhoon/aktivhoon.github.io/main/_posts/images/network.png" alt="Network" style="width: 90%;" />
+<img src="./images/network.png" alt="Network" style="width: 90%;" />
 
 Just as no single laboratory value defines rheumatoid arthritis or inflammatory bowel disease, no single psychotic symptom is unique to either bipolar disorder with psychotic features or schizophrenia. As I discussed in my [recent paper](https://www.nature.com/articles/s41398-025-03403-6), the diagnostic distinction between these conditions relies on recognizing distinctive lifelong symptom patterns—schizophenia characterized by negative symptoms as its core feature, while bipolar I disorder centers around positive symptoms. However, this pattern recognition remains limited to the population level and cannot reliably be applied to individual patients. We're still fundamentally in the business of syndrome recognition, whether we're looking at white blood cell differentials or thought disorder patterns. The computational sophistication therefore doesn't change the underlying diagnostic philosophy.
 
@@ -47,7 +47,7 @@ First, models must demonstrate unique mapping to similar but distinct pathophysi
 
 Second, truly mechanistic models must explain both normal individuals and psychiatric disease within the same framework through different parameter ranges, not separate models entirely. This reflects the dimensional nature of psychiatric symptoms and provides a crucial test of biological validity. More critically, if these parameters truly represent causal mechanisms, then controlling them should lead to predictable changes in symptom severity—avoiding the scenario where the true mechanism serves as a confounder of both the parameter and symptom severity.
 
-<img src="https://raw.githubusercontent.com/aktivhoon/aktivhoon.github.io/main/_posts/images/disease%20parameter%20symptom.png" alt="Disease Confounder" style="width: 70%;" />
+<img src="./images/disease%20parameter%20symptom.png" alt="Disease Confounder" style="width: 70%;" />
 
 Finally, models must maintain biological plausibility even at the neural representation level. A model might perfectly predict behavioral outcomes while proposing mechanisms that violate or neglect basic neurobiology. Without this constraint, we risk creating sophisticated mathematical descriptions that, while predictively useful, tell us nothing about the actual biological processes underlying psychiatric disease. The goal isn't just to explain the surface phenomena (behavior)—it's to understand and ultimately intervene at the level of mechanism.
 
