@@ -200,7 +200,5 @@ Remind that both PlaNet and No value case uses only directly sampled rewards ($$
 ## Reference
 
 1. Hafner, D., Lillicrap, T., Ba, J., & Norouzi, M. (2019). Dream to control: Learning behaviors by latent imagination. In *International Conference on Learning Representations (ICLR) 2020*
-
 2. Hafner, D., Lillicrap, T., Fischer, I., Villegas, R., Ha, D., Lee, H., & Davidson, J. (2019). Learning latent dynamics for planning from pixels. In *International Conference on Machine Learning (ICML) 2019*
-
 3. Poole, B., Ozair, S., Van Den Oord, A., Alemi, A., & Tucker, G. (2019, May). On variational bounds of mutual information. In *International Conference on Machine Learning (ICML) 2019*

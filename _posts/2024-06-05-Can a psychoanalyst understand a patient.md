@@ -67,7 +67,7 @@ What I am emphasizing is that if we do not acknowledge the current gaps in the s
 
 ## References
 
-1. <a name="footnote_1"> Lazebnik, Y. (2002). Can a biologist fix a radio?—Or, what I learned while studying apoptosis. *Cancer cell*, *2*(3), 179-182.](https://pubmed.ncbi.nlm.nih.gov/12242150/)</a>
+1. <a name="footnote_1">[Lazebnik, Y. (2002). Can a biologist fix a radio?—Or, what I learned while studying apoptosis. *Cancer cell*, *2*(3), 179-182.](https://pubmed.ncbi.nlm.nih.gov/12242150/)</a>
 2. <a name="footnote_2">[Jonas, E., & Kording, K. P. (2017). Could a neuroscientist understand a microprocessor?. *PLoS computational biology*, *13*(1), e1005268.](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1005268)</a>
 3. <a name="footnote_3">[Fonagy, P., *et al*.  (2015). Pragmatic randomized controlled trial of long‐term  psychoanalytic psychotherapy for treatment‐resistant depression: the  Tavistock Adult Depression Study (TADS). *World Psychiatry*, *14*(3), 312-321.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4592654/)</a>
 4. <a name="footnote_4"> [Leichsenring, F. (2005). Are psychodynamic and psychoanalytic therapies effective?: A review of empirical data. *The International Journal of Psychoanalysis*, *86*(3), 841-868.](https://onlinelibrary.wiley.com/doi/abs/10.1516/RFEE-LKPN-B7TF-KPDU)</a>
