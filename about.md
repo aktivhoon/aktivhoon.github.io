@@ -6,7 +6,7 @@ excerpt:
 comments: false
 ---
 
-I am a **Psychiatry Resident at SNUH** navigating the intersection of clinical wisdom and mathematical rigor. I’ve always been driven to decode the "algorithms" of the human mind 🧠. 
+I am a **graduate stuent at KAIST** navigating the intersection of clinical wisdom and mathematical rigor. I’ve always been driven to decode the "algorithms" of the human mind 🧠. 
 
 **What I'm currently into:**
 
@@ -16,8 +16,8 @@ I am a **Psychiatry Resident at SNUH** navigating the intersection of clinical w
 
 **My Path:**
 
-* **KAIST (Ph.D.) 🔬**: Thesis on the geometry of learning and the functional role of the orbitofrontal cortex in mental representation.
-* **SNU Medicine (M.D.)** 🩺: Learning to solve inverse problems in clinical settings
+* **KAIST (Ph.D., Ongoing) 🔬**: Thesis on the geometry of learning and the functional role of the orbitofrontal cortex in mental representation.
+* **SNU Medicine (M.D., Board Certified Psychiatrist)** 🩺: Learning to solve inverse problems in clinical settings.
 * **KAIST (B.S.)** 🧬: Building a foundation in life sciences and computational logic.
 
 I believe the future of psychiatry lies in bridging the gap between the clinic and the computer. When I’m not with patients, I’m likely tweaking a model or exploring formal logic.
