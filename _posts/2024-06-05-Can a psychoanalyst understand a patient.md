@@ -33,7 +33,7 @@ Moreover, we have to note that both the amount spent on private health insurance
 
 ![public-health-expenditure-share-gdp](https://github.com/aktivhoon/reservoir_global/assets/4964573/05091ae3-f20e-42e5-be6d-457f0378347d)
 
-Health spending in the U.S. increased by 4.1% in 2022, reaching \$4.4 trillion, which equals to \$13,493 per capita.<sup>[7](#footnote_7)</sup> Hospital care constituted the largest portion of this expenditure, accounting for 30.4% of the total spending. In response to these rising costs, numerous countries are implementing strategies to reduce healthcare spending. These include setting caps on the number of covered sessions for long-term psychotherapy or limiting insurance coverage to short-term psychotherapies.<sup>[8](#footnote_8)</sup>
+Health spending in the U.S. increased by 4.1% in 2022, reaching &#36;4.4 trillion, which equals to &#36;13,493 per capita.<sup>[7](#footnote_7)</sup> Hospital care constituted the largest portion of this expenditure, accounting for 30.4% of the total spending. In response to these rising costs, numerous countries are implementing strategies to reduce healthcare spending. These include setting caps on the number of covered sessions for long-term psychotherapy or limiting insurance coverage to short-term psychotherapies.<sup>[8](#footnote_8)</sup>
 
 To persuade others of the importance of psychoanalysis, merely stating that its effectiveness can't be conclusively proven by research is like trying to sell a car by saying, "Well, it might work." Sure, proving the effectiveness of psychoanalysis is one of psychology's millennium questions, but that doesn't mean we can just shrug and move on. We still have an obligation to tackle this issue, ensuring that even those outside the field can see the value in investing time and money into therapy.
 
@@ -67,12 +67,19 @@ What I am emphasizing is that if we do not acknowledge the current gaps in the s
 
 ## References
 
-1. <a name="footnote_1">[Lazebnik, Y. (2002). Can a biologist fix a radio?—Or, what I learned while studying apoptosis. *Cancer cell*, *2*(3), 179-182.](https://pubmed.ncbi.nlm.nih.gov/12242150/)</a>
-2. <a name="footnote_2">[Jonas, E., & Kording, K. P. (2017). Could a neuroscientist understand a microprocessor?. *PLoS computational biology*, *13*(1), e1005268.](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1005268)</a>
-3. <a name="footnote_3">[Fonagy, P., *et al*.  (2015). Pragmatic randomized controlled trial of long‐term  psychoanalytic psychotherapy for treatment‐resistant depression: the  Tavistock Adult Depression Study (TADS). *World Psychiatry*, *14*(3), 312-321.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4592654/)</a>
-4. <a name="footnote_4"> [Leichsenring, F. (2005). Are psychodynamic and psychoanalytic therapies effective?: A review of empirical data. *The International Journal of Psychoanalysis*, *86*(3), 841-868.](https://onlinelibrary.wiley.com/doi/abs/10.1516/RFEE-LKPN-B7TF-KPDU)</a>
-5. <a name="footnote_5"> [Freud, S. (2015). Beyond the pleasure principle. *Psychoanalysis and History*, *17*(2), 151-204.](https://www.euppublishing.com/doi/abs/10.3366/pah.2015.0169?journalCode=pah)</a>
-6. <a name="footnote_6"> https://staging.macleans.ca/culture/books/how-better-understanding-the-minds-biology-could-improve-or-even-cure-autism-and-schizophrenia</a>
-7. <a name="footnote_7"> https://www.ama-assn.org/about/research/trends-health-care-spending</a>
-8. <a name="footnote_8"> [Knekt, P., *et al*. (2016). The outcome of  short-and long-term psychotherapy 10 years after start of treatment. *Psychological medicine*, *46*(6), 1175-1188.](https://www.cambridge.org/core/journals/psychological-medicine/article/outcome-of-short-and-longterm-psychotherapy-10-years-after-start-of-treatment/E2F5B69FED541530B13A818CEE06D739)</a>
+<a name="footnote_1">[1]</a> [Lazebnik, Y. (2002). Can a biologist fix a radio?—Or, what I learned while studying apoptosis. *Cancer cell*, *2*(3), 179-182.](https://pubmed.ncbi.nlm.nih.gov/12242150/)
+
+<a name="footnote_2">[2]</a> [Jonas, E., & Kording, K. P. (2017). Could a neuroscientist understand a microprocessor?. *PLoS computational biology*, *13*(1), e1005268.](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1005268)
+
+<a name="footnote_3">[3]</a> [Fonagy, P., *et al*.  (2015). Pragmatic randomized controlled trial of long‐term  psychoanalytic psychotherapy for treatment‐resistant depression: the  Tavistock Adult Depression Study (TADS). *World Psychiatry*, *14*(3), 312-321.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4592654/)
+
+<a name="footnote_4">[4]</a> [Leichsenring, F. (2005). Are psychodynamic and psychoanalytic therapies effective?: A review of empirical data. *The International Journal of Psychoanalysis*, *86*(3), 841-868.](https://onlinelibrary.wiley.com/doi/abs/10.1516/RFEE-LKPN-B7TF-KPDU)
+
+<a name="footnote_5">[5]</a> [Freud, S. (2015). Beyond the pleasure principle. *Psychoanalysis and History*, *17*(2), 151-204.](https://www.euppublishing.com/doi/abs/10.3366/pah.2015.0169?journalCode=pah)
+
+<a name="footnote_6">[6]</a> https://staging.macleans.ca/culture/books/how-better-understanding-the-minds-biology-could-improve-or-even-cure-autism-and-schizophrenia
+
+<a name="footnote_7">[7]</a> https://www.ama-assn.org/about/research/trends-health-care-spending
+
+<a name="footnote_8">[8]</a> [Knekt, P., *et al*. (2016). The outcome of  short-and long-term psychotherapy 10 years after start of treatment. *Psychological medicine*, *46*(6), 1175-1188.](https://www.cambridge.org/core/journals/psychological-medicine/article/outcome-of-short-and-longterm-psychotherapy-10-years-after-start-of-treatment/E2F5B69FED541530B13A818CEE06D739)
 
